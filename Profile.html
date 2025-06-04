@@ -210,10 +210,8 @@
       input.addEventListener("change", () => {
         const newFiles = Array.from(input.files);
 
-        // Gabungkan dengan file yang sudah ada
         selectedFiles = selectedFiles.concat(newFiles);
 
-        // Tampilkan semua file
         fileListUI.innerHTML = "";
         selectedFiles.forEach((file, index) => {
           const li = document.createElement("li");
@@ -221,7 +219,6 @@
           fileListUI.appendChild(li);
         });
 
-        // Reset input agar bisa pilih file sama lagi jika perlu
         input.value = "";
       });
 

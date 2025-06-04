@@ -374,7 +374,7 @@
     <script>
         document.querySelectorAll('.dropdown-item').forEach(item => {
             item.addEventListener('click', function(e) {
-            e.preventDefault(); // stop default <a> behavior
+            e.preventDefault(); 
             const filter = this.getAttribute('data-filter');
             const jobs = document.querySelectorAll('.job-listing');
 
