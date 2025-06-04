@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="Assets/css/style-job.css">
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <img class="img-fluid" style="max-width: 120px;" src="Assets/img/Logo (2).png" alt="Logo jobPortal">
+
+            <!-- mobile burgers -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Nav Links -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a class="nav-link px-3 active" aria-current="page" href="home.html">
+                    Home
+                </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link px-3" href="Job.html">
+                    <span style="color:#2651BC">Job</span>
+                </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link px-3" href="bootcamp.html">Bootcamp</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link px-3" href="About.html">About</a>
+                </li>
+            </ul>
+
+            <div class="d-none d-lg-flex gap-2 align-items-center ms-auto">
+                <a href="Profile.html">
+                <i class="bi bi-person fs-2 mb-2" style="color: #2651BC;" ></i>
+                </a>
+            </div>
+
+            <!-- mobile content burgers -->
+            <div class="d-lg-none w-100 mt-3 border-top pt-3 text-center">
+                <a href="Profile.html">
+                <i class="bi bi-person fs-2 mb-2" style="color: #2651BC;" ></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    </nav>  
+
+    <!-- body Section -->
+    <div class="container my-5">
+        <!-- Search Bar -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-10">
+                <div class="d-flex flex-column flex-md-row shadow rounded-4 p-3 gap-2">
+                
+                <div class="flex-fill d-flex align-items-center px-md-3">
+                    <i class="bi bi-search me-2 text-muted"></i>
+                    <input type="text" class="form-control border-0" placeholder="Search Job Category">
+                </div>
+
+                <div class="flex-fill d-flex align-items-center px-md-3 border-top border-md-top-0 border-md-start pt-2 pt-md-0">
+                    <i class="bi bi-geo-alt me-2 text-muted"></i>
+                    <input type="text" class="form-control border-0" placeholder="Location">
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between justify-content-md-start">
+                    <div class="dropdown me-md-2 w-100 w-md-auto">
+                    <button class="btn btn-light dropdown-toggle w-100" type="button" id="filterDropdown" data-bs-toggle="dropdown">
+                        <i class="bi bi-sliders2-vertical me-2"></i>Filters
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+                        <li><a class="dropdown-item" href="#" data-filter="Full">Full Time</a></li>
+                        <li><a class="dropdown-item" href="#" data-filter="Part Time">Part Time</a></li>
+                        <li><a class="dropdown-item" href="#" data-filter="Intern">Internship</a></li>
+                        <li><a class="dropdown-item" href="#" data-filter="All">Show All</a></li>
+                    </ul>
+                    </div>
+
+                    <button class="btn btn-primary w-100 w-md-auto">Search</button>
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div class="row g-4">
+            <!-- CARD1 -->
+            <div class="col-md-6 col-12 mt-4 job-listing" data-type="Full">
+                <div class="card p-4 job-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <img src="Assets/card-icon-Job/ruangGuru.svg" alt="Ruang Guru" style="height: 40px;">
+                        <span class="badge badge-job text-white">Full</span>
+                    </div>
+                    <h5 class="mt-3 mb-1">UI / UX Designer</h5>
+                    <hr>
+                    <p class="truncate text-muted mb-2">Ruang Guru is currently hiring for a UI/UX Designer!
+                        This role requires developing a better look of Ruang Guru's website or app and providing user
+                        experience by ...</p>
+                    <div class="d-flex justify-content-between text-muted small">
+                        <span><i class="bi bi-clock me-1"></i>30 Days Ago</span>
+                        <span><i class="bi bi-geo-alt me-1"></i>Jakarta, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD2 -->
+            <div class="col-md-6 col-12 mt-4 job-listing" data-type="Full">
+                <div class="card p-4 job-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <img src="Assets/card-icon-Job/ptHarts.svg" alt="Ruang Guru" style="height: 40px;">
+                        <span class="badge badge-job text-white">Full</span>
+                    </div>
+                    <h5 class="mt-3 mb-1">Web Programmer</h5>
+                    <hr>
+                    <p class="truncate text-muted mb-2">PT HARTS INTAN MAHAKARYA is a company engaged in the field of
+                        Information and Communication Technology, specifically in web development. We are currently
+                        looking
+                        for
+                        an experienced Web...</p>
+                    <div class="d-flex justify-content-between text-muted small">
+                        <span><i class="bi bi-clock me-1"></i>7 Days Ago</span>
+                        <span><i class="bi bi-geo-alt me-1"></i>Surabaya, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD3 -->
+            <div class="col-md-6 col-12 mt-4 job-listing" data-type="Intern">
+                <div class="card p-4 job-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <img src="Assets/card-icon-Job/Google.svg" alt="Ruang Guru" style="height: 40px;">
+                        <span class="badge badge-intern text-white">Internship</span>
+                    </div>
+                    <h5 class="mt-3 mb-1">Web Developer</h5>
+                    <hr>
+                    <p class="truncate text-muted mb-2">Google is currently hiring for a Web Developer! This role
+                        requires
+                        developing a better look of Google website or app and providing user experience by ...</p>
+                    <div class="d-flex justify-content-between text-muted small">
+                        <span><i class="bi bi-clock me-1"></i>30 Days Ago</span>
+                        <span><i class="bi bi-geo-alt me-1"></i>Jakarta, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD4 -->
+            <div class="col-md-6 col-12 mt-4 job-listing" data-type="Part Time">
+                <div class="card p-4 job-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <img src="Assets/card-icon-Job/triv.svg" alt="Ruang Guru" style="height: 40px;">
+                        <span class="badge badge-part text-white">Part Time</span>
+                    </div>
+                    <h5 class="mt-3 mb-1">IOS Developer</h5>
+                    <hr>
+                    <p class="truncate text-muted mb-2">Triv is one of the largest and oldest Cryptocurrency exchanges
+                        in
+                        Indonesia since 2015. We're currently seeking an iOS Developer with a strong focus on building
+                        robust,
+                        user-friendly mobile...</p>
+                    <div class="d-flex justify-content-between text-muted small">
+                        <span><i class="bi bi-clock me-1"></i>5 Days Ago</span>
+                        <span><i class="bi bi-geo-alt me-1"></i>Surabaya, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD5 -->
+            <div class="col-md-6 col-12 mt-4 job-listing" data-type="Part Time">
+                <div class="card p-4 job-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <img src="Assets/card-icon-Job/OLX.svg" alt="Ruang Guru" style="height: 40px;">
+                        <span class="badge badge-part text-white">Part Time</span>
+                    </div>
+                    <h5 class="mt-3 mb-1">Data Analyst</h5>
+                    <hr>
+                    <p class="truncate text-muted mb-2">OLX is currently hiring for a Data Analyst! This role requires
+                        developing a better look of OLX website or app and providing user experience by ...</p>
+                    <div class="d-flex justify-content-between text-muted small">
+                        <span><i class="bi bi-clock me-1"></i>30 Days Ago</span>
+                        <span><i class="bi bi-geo-alt me-1"></i>Jakarta, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD6 -->
+            <div class="col-md-6 col-12 mt-4 job-listing" data-type="Full">
+                <div class="card p-4 job-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <img src="Assets/card-icon-Job/Spotify.svg" alt="Ruang Guru" style="height: 40px;">
+                        <span class="badge badge-job text-white">Full</span>
+                    </div>
+                    <h5 class="mt-3 mb-1">Content Marketing Manager</h5>
+                    <hr>
+                    <p class="truncate text-muted mb-2">Spotify is looking for a passionate and expert Content Marketing
+                        Manager for a permanent role for Indonesia. This person is to drive the strategy, production and
+                        distribution of content through...</p>
+                    <div class="d-flex justify-content-between text-muted small">
+                        <span><i class="bi bi-clock me-1"></i>1 Days Ago</span>
+                        <span><i class="bi bi-geo-alt me-1"></i>Jakarta, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD7 -->
+            <div class="col-md-6 col-12 mt-4 job-listing" data-type="Full">
+                <div class="card p-4 job-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <img src="Assets/card-icon-Job/Facebook.svg" alt="Ruang Guru" style="height: 40px;">
+                        <span class="badge badge-job text-white">Full</span>
+                    </div>
+                    <h5 class="mt-3 mb-1">UX Researcher Intern</h5>
+                    <hr>
+                    <p class="truncate text-muted mb-2">Facebook is currently hiring for a UX Researcher! This role
+                        requires
+                        developing a better look of Facebook website or app and providing user experience by ...</p>
+                    <div class="d-flex justify-content-between text-muted small">
+                        <span><i class="bi bi-clock me-1"></i>30 Days Ago</span>
+                        <span><i class="bi bi-geo-alt me-1"></i>Jakarta, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD8 -->
+            <div class="col-md-6 col-12 mt-4 job-listing" data-type="Intern">
+                <div class="card p-4 job-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <img src="Assets/card-icon-Job/traveloka.svg" alt="Ruang Guru" style="height: 40px;">
+                        <span class="badge badge-intern text-white">Internship</span>
+                    </div>
+                    <h5 class="mt-3 mb-1">Country Pricing Manager</h5>
+                    <hr>
+                    <p class="truncate text-muted mb-2">Traveloka is seeking a highly skilled Pricing Strategy Manager
+                        to
+                        lead a team of pricing associates to lead the execution of our pricing strategy across all
+                        products
+                        in
+                        Traveloka. The ideal...</p>
+                    <div class="d-flex justify-content-between text-muted small">
+                        <span><i class="bi bi-clock me-1"></i>1 Week Ago</span>
+                        <span><i class="bi bi-geo-alt me-1"></i>Jakarta, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD9 -->
+            <div class="col-md-6 col-12 mt-4 job-listing" data-type="Full">
+                <div class="card p-4 job-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <img src="Assets/card-icon-Job/oyo.svg" alt="Ruang Guru" style="height: 40px;">
+                        <span class="badge badge-job text-white">Full</span>
+                    </div>
+                    <h5 class="mt-3 mb-1">Mobile Developer</h5>
+                    <hr>
+                    <p class="truncate text-muted mb-2">OYO is currently hiring for a Mobile Developer! This role
+                        requires
+                        developing a better look of OYO website or app and providing user experience by ...</p>
+                    <div class="d-flex justify-content-between text-muted small">
+                        <span><i class="bi bi-clock me-1"></i>30 Days Ago</span>
+                        <span><i class="bi bi-geo-alt me-1"></i>Jakarta, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD10 -->
+            <div class="col-md-6 col-12 mt-4 job-listing" data-type="Full">
+                <div class="card p-4 job-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <img src="Assets/card-icon-Job/shoope.svg" alt="Ruang Guru" style="height: 40px;">
+                        <span class="badge badge-job text-white">Full</span>
+                    </div>
+                    <h5 class="mt-3 mb-1">Province Operations Lead</h5>
+                    <hr>
+                    <p class="truncate text-muted mb-2">Shopee is seeking a dedicated and results-driven professional to
+                        oversee Health, Safety, and Environment (HSE) implementation and ensure people safety within
+                        assigned provinces. In this role...</p>
+                    <div class="d-flex justify-content-between text-muted small">
+                        <span><i class="bi bi-clock me-1"></i>3 Days Ago</span>
+                        <span><i class="bi bi-geo-alt me-1"></i>Jakarta, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD11 -->
+            <div class="col-md-6 col-12 mt-4 job-listing" data-type="Intern">
+                <div class="card p-4 job-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <img src="Assets/card-icon-Job/otakKanan.svg" alt="Ruang Guru" style="height: 40px;">
+                        <span class="badge badge-intern text-white">Internship</span>
+                    </div>
+                    <h5 class="mt-3 mb-1">Front End Developer Intern</h5>
+                    <hr>
+                    <p class="truncate text-muted mb-2">PT OTAK KANAN INDONESIA is currently hiring for a front End
+                        Developer! This role requires developing a better look of PT OTAK KANAN website or app and
+                        providing
+                        user
+                        experience by ...</p>
+                    <div class="d-flex justify-content-between text-muted small">
+                        <span><i class="bi bi-clock me-1"></i>30 Days Ago</span>
+                        <span><i class="bi bi-geo-alt me-1"></i>Jakarta, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD12 -->
+            <div class="col-md-6 col-12 mt-4 job-listing" data-type="Part Time">
+                <div class="card p-4 job-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <img src="Assets/card-icon-Job/ltd.svg" alt="Ruang Guru" style="height: 40px;">
+                        <span class="badge badge-part text-white">Part Time</span>
+                    </div>
+                    <h5 class="mt-3 mb-1">DevOps Engineer</h5>
+                    <hr>
+                    <p class="truncate text-muted mb-2">The Software Practice Pte Ltd is a Singapore based software
+                        consulting firm looking for smart people. You should be able to learn quickly and work
+                        independently - we'll help you as...</p>
+                    <div class="d-flex justify-content-between text-muted small">
+                        <span><i class="bi bi-clock me-1"></i>2 Days Ago</span>
+                        <span><i class="bi bi-geo-alt me-1"></i>West Java, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination mt-4">
+        <i class="arrow bi bi-arrow-left"></i>
+        <div>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+        </div>
+        <i class="arrow bi bi-arrow-right"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <img class="img-fluid" style="max-width: 120px;" src="Assets/Logo.svg" alt="Logo jobPortal">
+            <p>Call now: <strong>+6282245580089</strong></p>
+            <p>Malang City, East Java, Indonesia</p>
+
+            <div class="mt-4 mb-3">
+                <a href="Home.html" class="me-3">Home</a>
+                <a href="Job.html" class="me-3">Job</a>
+                <a href="Bootcamp-details.html" class="me-3">Bootcamp</a>
+                <a href="About.html" class="me-3">About</a>
+            </div>
+
+            <p class="mb-0">&copy; 2024 – Job Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS Filters -->
+    <script>
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+            e.preventDefault(); // stop default <a> behavior
+            const filter = this.getAttribute('data-filter');
+            const jobs = document.querySelectorAll('.job-listing');
+
+            jobs.forEach(job => {
+                const type = job.getAttribute('data-type');
+
+                if (filter === 'All' || filter === type) {
+                job.style.display = 'block';
+                } else {
+                job.style.display = 'none';
+                }
+            });
+            });
+        });
+    </script>
+</body>
+
+</html>
